@@ -1,0 +1,12 @@
+// Test 1 //
+
+python SmithWaterman.py
+ACACACTA
+AGCACACA
+
+// Expected //
+
+Sequence 1: A-CACACTA
+Sequence 2: AGCACAC-A
+
+// Actual //
