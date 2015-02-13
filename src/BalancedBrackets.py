@@ -27,10 +27,18 @@ def bracketsAreBalanced(input_str):
         if char in left_set:
             stack.append(char)
         elif char in right_set:
+            # if the last item of the stack (all left characters)
+            #  does NOT map to the character we're looking at; return false
             if not stack or stack.pop() != right_to_left[char]:
                 return False
+
+    # if there are remaining items in the stack, you have
+    #  extra left parens left with nothing to close them with; return false
     if stack:
         return False
+
+    # finished iterating through the string
+    #  and the stack ended up empty; return true
     return True
 
 if __name__ == '__main__':
@@ -39,6 +47,7 @@ if __name__ == '__main__':
     b = '(({]'
     c = '((((([][][][]))))){}{}()'
     d = '{}(})()})()()}()(][]][][][}}}}[[[{{}'
+    e = '{[}]'
     if bracketsAreBalanced(a) == True:
         print 'Test a passed, bracketsAreBalanced(' + '\'' + a + '\'' + ')'
     if bracketsAreBalanced(b) == False:
@@ -47,3 +56,5 @@ if __name__ == '__main__':
         print 'Test c passed, bracketsAreBalanced(' + '\'' + c + '\'' + ')'
     if bracketsAreBalanced(d) == False:
         print 'Test d passed, bracketsAreBalanced(' + '\'' + d + '\'' + ')'
+    if bracketsAreBalanced(e) == False:
+        print 'Test e passed, bracketsAreBalanced(' + '\'' + e + '\'' + ')'
