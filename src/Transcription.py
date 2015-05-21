@@ -11,6 +11,10 @@ def transcribe(t):
             s_letters[i] = 'U'
     return s_letters
 
+"""
+Pythonic solution
+"""
+
 def transcribe_2():
     print raw_input().replace('T','U')
 
