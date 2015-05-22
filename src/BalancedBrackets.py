@@ -48,13 +48,13 @@ if __name__ == '__main__':
     c = '((((([][][][]))))){}{}()'
     d = '{}(})()})()()}()(][]][][][}}}}[[[{{}'
     e = '{[}]'
-    if bracketsAreBalanced(a) == True:
+    if bracketsAreBalanced(a):
         print 'Test a passed, bracketsAreBalanced(' + '\'' + a + '\'' + ')'
-    if bracketsAreBalanced(b) == False:
+    if not bracketsAreBalanced(b):
         print 'Test b passed, bracketsAreBalanced(' + '\'' + b + '\'' + ')'
-    if bracketsAreBalanced(c) == True:
+    if bracketsAreBalanced(c):
         print 'Test c passed, bracketsAreBalanced(' + '\'' + c + '\'' + ')'
-    if bracketsAreBalanced(d) == False:
+    if not bracketsAreBalanced(d):
         print 'Test d passed, bracketsAreBalanced(' + '\'' + d + '\'' + ')'
-    if bracketsAreBalanced(e) == False:
+    if not bracketsAreBalanced(e):
         print 'Test e passed, bracketsAreBalanced(' + '\'' + e + '\'' + ')'
