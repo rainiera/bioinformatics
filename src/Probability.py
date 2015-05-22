@@ -57,7 +57,38 @@ def p_of_dominant_phenotype_2(homoDom, hetero, homoRec):
             dominantProbability += probabilities[i][j] * counts[i] * second / denom
     return dominantProbability
 
+"""
+Pre: A list of 6 positive integers, all less than or equal to 20000.
+Correspond to the number of couples in a population possessing each genotype pairing
+In order, the six integers represent the number of couples having the following genotypes:
+1. AA-AA
+2. AA-Aa
+3. AA-aa
+4. Aa-Aa
+5. Aa-aa
+6. aa-aa
+
+Post: Expected number of offspring displaying the dominant phenotype in the next generation,
+under the assumption that every couple has exactly two offspring
+"""
+
+def expected_value(kmnpqrStr, probabilities):
+    kmnpqrList = kmnpqrStr.split(" ")
+    sum = 0
+    for i in range(0, len(kmnpqrList) - 1):
+        sum += float(kmnpqrList[i]) * probabilities[i]
+    return sum * 2
+
+"""
+Same thing but with a list comprehension
+"""
+
+def expected_value_2():
+    return sum([a * int(b) for a,b in zip([2, 2, 2, 1.5, 1, 0], '1 0 0 1 0 1'.split())])
+
 if __name__ == "__main__":
-    kmnList = [15, 24, 30]
-    print p_of_dominant_phenotype(kmnList)
-    print p_of_dominant_phenotype_2(15, 24, 30)
+    # kmnList = [15, 24, 30]
+    # print p_of_dominant_phenotype(kmnList)
+    # print p_of_dominant_phenotype_2(15, 24, 30)
+    pr = [1.0, 1.0, 1.0, 0.75, 0.5, 0]
+    print expected_value("18285 18725 16233 17979 17217 18429", pr)
