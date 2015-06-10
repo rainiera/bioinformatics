@@ -13,8 +13,8 @@ def get_highest_GC(filename):
             else:
                 strands[id] += line.strip('\n')
 
-    max = 0
-    maxId = ''
+    max, maxId = 0, ''
+
     for id in strands:
         if get_GC_percentage(strands[id]) > max:
             maxId = id
