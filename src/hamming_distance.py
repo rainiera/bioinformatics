@@ -5,12 +5,6 @@ Returns the Hamming Distance of two strings, defined as the minimum number of ch
 changes required of one string to make it identical to another string. Is case-sensitive.
 """
 
-"""
-preconditions:
-    neither parameter may be null
-    strings must be of equal length
-"""
-
 def hammingDistance(str1, str2):
     if str1 is None or str2 is None or len(str1) != len(str2):
         raise Exception("Neither parameter may be null, strings must be equal length")

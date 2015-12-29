@@ -1,21 +1,6 @@
 __author__ = 'rainierababao'
 
-"""
-Lol my "transition from Java -> Python" solution
-"""
-
-def transcribe(t):
-    s_letters = list(t)
-    for i in range(0, len(s_letters) - 1):
-        if s_letters[i] == 'T':
-            s_letters[i] = 'U'
-    return s_letters
-
-"""
-Pythonic solution
-"""
-
-def transcribe_2():
+def transcribe():
     print raw_input().replace('T','U')
 
 if __name__ == '__main__':
@@ -24,4 +9,4 @@ if __name__ == '__main__':
     for letter in transcribe(t):
         result = result + letter
     print result
-    transcribe_2()
+    transcribe()

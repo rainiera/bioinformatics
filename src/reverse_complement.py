@@ -2,18 +2,10 @@ __author__ = 'rainierababao'
 from string import maketrans
 
 
-"""
-My solution -- the second most creative!
-"""
-
 def reverse_complement(s):
     sc = s.replace("A", "X").replace("C", "Y").replace("T", "A").replace("G", "C").replace("X", "T").replace("Y", "G")
     sc = sc[::-1]
     return sc
-
-"""
-Love this clever workaround!
-"""
 
 def reverse_complement_2(s):
     sc = s.replace('A', 't').replace('T', 'a').replace('C', 'g').replace('G', 'c').upper()[::-1]

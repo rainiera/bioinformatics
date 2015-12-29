@@ -12,9 +12,6 @@ but the concept can be extended to strings or lists in general.
 
 For more information, check out the Wikipedia article:
 http://en.wikipedia.org/wiki/Smith-Waterman_algorithm
-
-Influenced by this implementation:
-http://puriney.github.io/2013/08/22/smith-waterman-algorithm/
 """
 
 # TODO fix an index out of range error that kept occurring during tests

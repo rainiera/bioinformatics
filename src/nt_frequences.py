@@ -1,11 +1,11 @@
 __author__ = 'rainierababao'
 
 """
-Interestingly enough, this happens to be 10x faster than tracking the counts
+This happens to be 10x faster than tracking the counts
 manually with a dictionary, even though the dictionary solution only iterates
 through the string once, rather than four times.
 
-Apparently "count" is a low-level C method in Python so it's much faster.
+"Count" is a low-level C method in Python so it's much faster.
 Map generates an iterator,
 """
 
@@ -13,7 +13,7 @@ def count_nucleotides(s):
     return s.count("A"), s.count("C"), s.count("G"), s.count("T")
 
 """
-The iterating through a dictionary solution. Theoretically smaller time complexity
+The iterating through a dictionary solution. Lower big O
 since it only iterates the nucleotide sequence once instead of four times.
 """
 

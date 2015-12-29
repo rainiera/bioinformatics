@@ -1,19 +1,11 @@
 __author__ = 'rainierababao'
 
-from collections import Counter
-
 def slicing_practice(s, a, b, c, d):
     return s[a:b+1] + " " + s[c:d+1]
 
-"""
-List comprehension!
-"""
 def conditions_and_loops(a, b):
     return sum(i for i in range(a, b + 1) if i % 2 == 1)
 
-"""
-Bitwise-or!
-"""
 def conditions_and_loops_2(a, b):
     return sum(range(a | 1, b + 1, 2))
 

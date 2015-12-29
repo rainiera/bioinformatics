@@ -1,15 +1,8 @@
-__author__ = 'rainierababao'
-
 '''
 Given a string made up of the characters '(', '[', '{', '}', ']', ')', returns
 whether the string has balanced brackets or not,
 
 e.g., '({}[])()' is balanced; '(({]' is not balanced.
-
-
-Apparently this is also a common interview question.
-Inspired by this set of pretty good videos:
-http://smithamilli.com/blog/most-common-interview-questions/
 '''
 
 
