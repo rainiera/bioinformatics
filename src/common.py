@@ -1,5 +1,3 @@
-__author__ = 'rainierababao'
-
 import random
 
 def fill(result, length):

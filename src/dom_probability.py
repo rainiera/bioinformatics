@@ -1,5 +1,3 @@
-__author__ = 'rainierababao'
-
 """
 Pre: A list of three positive integers k, m, and n, representing a population containing
 k + m + n organisms (k = homozygous dominant, m = heterozygous, n = homozygous recessive)

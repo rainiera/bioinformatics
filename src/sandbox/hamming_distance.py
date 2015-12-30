@@ -1,5 +1,3 @@
-__author__ = 'rainierababao'
-
 """
 Returns the Hamming Distance of two strings, defined as the minimum number of character
 changes required of one string to make it identical to another string. Is case-sensitive.

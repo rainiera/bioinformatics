@@ -1,5 +1,3 @@
-__author__ = 'rainierababao'
-
 def slicing_practice(s, a, b, c, d):
     return s[a:b+1] + " " + s[c:d+1]
 

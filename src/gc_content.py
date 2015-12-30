@@ -1,5 +1,3 @@
-__author__ = 'rainierababao'
-
 def get_highest_GC(filename):
     f = open(filename, 'r')
     strands = {}

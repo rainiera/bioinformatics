@@ -1,5 +1,3 @@
-__author__ = 'rainierababao'
-
 """
 Local sequence alignment using the Smith-Waterman algorithm.
 

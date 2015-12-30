@@ -1,10 +1,8 @@
-'''
-Given a string made up of the characters '(', '[', '{', '}', ']', ')', returns
+"""Given a string made up of the characters '(', '[', '{', '}', ']', ')', returns
 whether the string has balanced brackets or not,
 
 e.g., '({}[])()' is balanced; '(({]' is not balanced.
-'''
-
+"""
 
 left_set = {'(', '{', '['}
 right_set = {')', '}', ']'}

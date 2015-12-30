@@ -1,5 +1,3 @@
-__author__ = 'rainierababao'
-
 """
 Returns true if a list-like object, including strings, is a palindrome. Otherwise false.
 """

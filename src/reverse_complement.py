@@ -1,4 +1,3 @@
-__author__ = 'rainierababao'
 from string import maketrans
 
 
