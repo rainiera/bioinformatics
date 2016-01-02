@@ -26,7 +26,7 @@ def get_shortest_gene_2(genbank_ids):
     print min(strands, key=lambda s: sum(len(x) for x in s.split('\n')[1:]))
 
 
-inp = "JX308803 JX469991 JX462669 GU292427 JX280897 JX317645 JX469983 NM_131329 JQ011270 NM_002037"
+inp = raw_input()
 ids = get_genbank_ids(inp)
 get_shortest_gene(ids)
 get_shortest_gene_2(ids)
